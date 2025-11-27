@@ -1,0 +1,30 @@
+html,body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#0b1b2b, #10263a);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+#gameCanvas {
+  width: 100vmin;   /* anpassar till skärmstorlek */
+  height: 100vmin;
+  max-width: 600px; /* desktop max */
+  max-height: 600px;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.03), rgba(0,0,0,0.15));
+  touch-action: none; /* viktigt för pekhantering */
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+#hud {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+}
+#score { font-size: 18px; font-weight: bold; }
+#info { font-size: 12px; opacity: 0.9; margin-top:6px; }
